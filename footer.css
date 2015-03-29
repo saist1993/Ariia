@@ -1,0 +1,28 @@
+.foot{
+	background-color: #eee;
+	color: #5c6bc0;
+	position:relative;
+	width: 100%;
+	
+	text-align: center;
+	padding-top: 20px;
+	height: 50px;
+	
+}
+#opt.jumbotron{
+	width: 500px;
+	position: relative;
+	height: 400px;
+	box-shadow: 10px 10px 5px #888888;
+}
+.btn .btn-primary .btn-lg{
+		
+	color: #009688;
+	
+}
+button.btn{
+	margin-top: 20px;
+	width: 100px;
+	
+}
+

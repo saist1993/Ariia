@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TestLogIn</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+<link rel="stylesheet" href="footer.css" type="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:#5c6bc0;">Hi-Tech Hospital</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" id="signUp" onClick="pageChange(this.id)" style="color:#5c6bc0"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+	<div class="container"  id="login" align="center">
+		<div class="jumbotron" id="login" align="center">
+		<form role="form">
+			<div class="form-group">
+				User Name:<br>
+				<input type="text" name="userName" id="userName" value="Mouse">
+			</div>
+			<div class="form-group">
+				Password:<br>
+				<input type="password" name="psw" id="psw" value="">
+			</div>
+			<div><button type="submint" class="btn btn-success" value="submit">Login</button></div>
+		</form>	
+		<hr>
+		<p>Forgot Password <a href="forgot.html">forgot Password?</a></p>
+		</div>	
+	</div>
+	<div class="foot">
+		<p id="bottom">Hi-Tech Hospital 2015</p>	
+	</div>
+<script>
+	function pageChange(id) {
+		
+		window.open("signup.html",'_parent');
+	}
+	function setVisibility(id,visibility) {
+		
+		var el = document.getElementById(id);
+		alert(el)
+		var el1 = document.getElementById('opt');
+			el1.style.display='none';		
+        el.style.display = visibility;
+	}
+</script>
+</body>
+</html>

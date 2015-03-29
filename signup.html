@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signUp</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+	<link rel="stylesheet" href="footer.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="runnable.css" type="text/css">
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+       
+</head>
+
+<body style="overflow:hidden;">
+	<div class="container">
+		<div class="type">
+			<label>Choose type of the user:</label>
+			<select id="tp">
+			<option value="Doctor">Doctor</option>
+			<option value="MedicalOfficer">Medical Officer</option>
+			<option value="Nurse">Nurse</option>
+			<option value="Receptionist">Receptionist</option>
+			</select>
+			<input type="button" value="Select" onClick="setVisibility()"/>		
+		</div>
+		<div class="f" id="Doctor" style="display:none;">		
+		<form id="signUp">
+			<fieldset>
+			<legend>Doctor's Basic</legend>
+			<div class="form-group">
+			<!--<label>First Name</label>-->
+			<input type="text" name="fname" placeholder="First Name" title="First Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Last Name</label>-->
+			<input type="text" name="lname" placeholder="Last Name" title="Last Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="text" name="date" id="datepicke" placeholder="Date" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Age</label>-->
+			<input type="number" name="age" placeholder="Age" id="age" />
+			</div>
+
+			<div class="form-group">
+			<!--<label>Sex</label>-->
+			<input type="radio" name="sex" value="male">Male
+			<input type="radio" name="sex" value="female">Female
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="datetime-local" name="datetime" id="datepicker" placeholder="Date & Time of Injury" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Contact Information</legend>		
+			<div class="form-group">
+			<!--<label>Address</label>-->
+			<input type="text" name="address" placeholder="Address" title="Enter full Address" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="number" name="ref" placeholder="Phone Number" title="10 digit mobile number" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="email" name="email" placeholder="e-mail ID" title="valid e-Mail ID" />
+			</div>
+			</fieldset>			
+			
+			<div class="form-group">
+			<!--<label>Reference</label>-->
+			<input type="text" name="ref" placeholder="Reference" title="referral doctor" />
+			</div>
+			
+			<fieldset>
+			<legend>Informant's Details</legend>
+			<div class="form-group">
+			<!--<label>Informant</label>-->
+			<input type="text" name="informant" placeholder="Informant" title="informant" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="iphone" placeholder="Informant Phone Number" title="10 digit mobile number" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Medical  Details</legend>
+			<div class="form-group">
+			<label>Medico Legal Case:</label>
+			<input type="radio" name="MLC" value="yes">Yes
+			<input type="radio" name="MLC" value="no">No
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="policyno" placeholder="Policy Number" title="Patient's policy number" />
+			</div>
+			</fieldset>
+			
+			<div class="col-submit">
+    			<button class="submitbtn btn-success">Submit Form</button>
+  			
+    			<button type="reset" class="submitbtn btn-danger" >Reset</button>
+  			</div>	  			
+		</form>	
+		</div>
+		
+		<div class="f" id="MedicalOfficer" style="display:none;">				
+		<form id="signUp">
+			<fieldset>
+			<legend>Medical Officer's Basic</legend>
+			<div class="form-group">
+			<!--<label>First Name</label>-->
+			<input type="text" name="fname" placeholder="First Name" title="First Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Last Name</label>-->
+			<input type="text" name="lname" placeholder="Last Name" title="Last Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="text" name="date" id="datepicke" placeholder="Date" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Age</label>-->
+			<input type="number" name="age" placeholder="Age" id="age" />
+			</div>
+
+			<div class="form-group">
+			<!--<label>Sex</label>-->
+			<input type="radio" name="sex" value="male">Male
+			<input type="radio" name="sex" value="female">Female
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="datetime-local" name="datetime" id="datepicker" placeholder="Date & Time of Injury" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Contact Information</legend>		
+			<div class="form-group">
+			<!--<label>Address</label>-->
+			<input type="text" name="address" placeholder="Address" title="Enter full Address" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="number" name="ref" placeholder="Phone Number" title="10 digit mobile number" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="email" name="email" placeholder="e-mail ID" title="valid e-Mail ID" />
+			</div>
+			</fieldset>			
+			
+			<div class="form-group">
+			<!--<label>Reference</label>-->
+			<input type="text" name="ref" placeholder="Reference" title="referral doctor" />
+			</div>
+			
+			<fieldset>
+			<legend>Informant's Details</legend>
+			<div class="form-group">
+			<!--<label>Informant</label>-->
+			<input type="text" name="informant" placeholder="Informant" title="informant" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="iphone" placeholder="Informant Phone Number" title="10 digit mobile number" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Medical  Details</legend>
+			<div class="form-group">
+			<label>Medico Legal Case:</label>
+			<input type="radio" name="MLC" value="yes">Yes
+			<input type="radio" name="MLC" value="no">No
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="policyno" placeholder="Policy Number" title="Patient's policy number" />
+			</div>
+			</fieldset>
+			
+			<div class="col-submit">
+    			<button class="submitbtn btn-success">Submit Form</button>
+  			
+    			<button type="reset" class="submitbtn btn-danger" >Reset</button>
+  			</div>
+  			  			
+		</form>	
+		</div>
+		
+		<div class="f" id="Nurse" style="display:none;">		
+		<form id="signUp">
+			<fieldset>
+			<legend>Nurse Basic</legend>
+			<div class="form-group">
+			<!--<label>First Name</label>-->
+			<input type="text" name="fname" placeholder="First Name" title="First Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Last Name</label>-->
+			<input type="text" name="lname" placeholder="Last Name" title="Last Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="text" name="date" id="datepicke" placeholder="Date" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Age</label>-->
+			<input type="number" name="age" placeholder="Age" id="age" />
+			</div>
+
+			<div class="form-group">
+			<!--<label>Sex</label>-->
+			<input type="radio" name="sex" value="male">Male
+			<input type="radio" name="sex" value="female">Female
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="datetime-local" name="datetime" id="datepicker" placeholder="Date & Time of Injury" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Contact Information</legend>		
+			<div class="form-group">
+			<!--<label>Address</label>-->
+			<input type="text" name="address" placeholder="Address" title="Enter full Address" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="number" name="ref" placeholder="Phone Number" title="10 digit mobile number" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="email" name="email" placeholder="e-mail ID" title="valid e-Mail ID" />
+			</div>
+			</fieldset>			
+			
+			<div class="form-group">
+			<!--<label>Reference</label>-->
+			<input type="text" name="ref" placeholder="Reference" title="referral doctor" />
+			</div>
+			
+			<fieldset>
+			<legend>Informant's Details</legend>
+			<div class="form-group">
+			<!--<label>Informant</label>-->
+			<input type="text" name="informant" placeholder="Informant" title="informant" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="iphone" placeholder="Informant Phone Number" title="10 digit mobile number" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Medical  Details</legend>
+			<div class="form-group">
+			<label>Medico Legal Case:</label>
+			<input type="radio" name="MLC" value="yes">Yes
+			<input type="radio" name="MLC" value="no">No
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="policyno" placeholder="Policy Number" title="Patient's policy number" />
+			</div>
+			</fieldset>
+			
+			<div class="col-submit">
+    			<button class="submitbtn btn-success">Submit Form</button>
+  			
+    			<button type="reset" class="submitbtn btn-danger" >Reset</button>
+  			</div>
+  			  			
+		</form>	
+		</div>
+		
+		<div class="f" id="Receptionist" style="display:none;">		
+		<form id="signUp">
+			<fieldset>
+			<legend>Receptionist's Basic</legend>
+			<div class="form-group">
+			<!--<label>First Name</label>-->
+			<input type="text" name="fname" placeholder="First Name" title="First Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Last Name</label>-->
+			<input type="text" name="lname" placeholder="Last Name" title="Last Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="text" name="date" id="datepicke" placeholder="Date" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Age</label>-->
+			<input type="number" name="age" placeholder="Age" id="age" />
+			</div>
+
+			<div class="form-group">
+			<!--<label>Sex</label>-->
+			<input type="radio" name="sex" value="male">Male
+			<input type="radio" name="sex" value="female">Female
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="datetime-local" name="datetime" id="datepicker" placeholder="Date & Time of Injury" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Contact Information</legend>		
+			<div class="form-group">
+			<!--<label>Address</label>-->
+			<input type="text" name="address" placeholder="Address" title="Enter full Address" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="number" name="ref" placeholder="Phone Number" title="10 digit mobile number" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="email" name="email" placeholder="e-mail ID" title="valid e-Mail ID" />
+			</div>
+			</fieldset>			
+			
+			<div class="form-group">
+			<!--<label>Reference</label>-->
+			<input type="text" name="ref" placeholder="Reference" title="referral doctor" />
+			</div>
+			
+			<fieldset>
+			<legend>Informant's Details</legend>
+			<div class="form-group">
+			<!--<label>Informant</label>-->
+			<input type="text" name="informant" placeholder="Informant" title="informant" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="iphone" placeholder="Informant Phone Number" title="10 digit mobile number" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Medical  Details</legend>
+			<div class="form-group">
+			<label>Medico Legal Case:</label>
+			<input type="radio" name="MLC" value="yes">Yes
+			<input type="radio" name="MLC" value="no">No
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="policyno" placeholder="Policy Number" title="Patient's policy number" />
+			</div>
+			</fieldset>
+			
+			<div class="col-submit">
+    			<button class="submitbtn btn-success">Submit Form</button>
+  			
+    			<button type="reset" class="submitbtn btn-danger" >Reset</button>
+  			</div>
+  			  			
+		</form>	
+		</div>
+		
+		<div class="f" id="Patient" style="display:none;">		
+		<form id="signUp">
+			<fieldset>
+			<legend>Patient's Basic</legend>
+			<div class="form-group">
+			<!--<label>First Name</label>-->
+			<input type="text" name="fname" placeholder="First Name" title="First Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Last Name</label>-->
+			<input type="text" name="lname" placeholder="Last Name" title="Last Name" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="text" name="date" id="datepicke" placeholder="Date" required/>
+			</div>
+
+			<div class="form-group">
+			<!--<label>Age</label>-->
+			<input type="number" name="age" placeholder="Age" id="age" />
+			</div>
+
+			<div class="form-group">
+			<!--<label>Sex</label>-->
+			<input type="radio" name="sex" value="male">Male
+			<input type="radio" name="sex" value="female">Female
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Date</label>-->
+			<input type="datetime-local" name="datetime" id="datepicker" placeholder="Date & Time of Injury" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Contact Information</legend>		
+			<div class="form-group">
+			<!--<label>Address</label>-->
+			<input type="text" name="address" placeholder="Address" title="Enter full Address" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="number" name="ref" placeholder="Phone Number" title="10 digit mobile number" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Phone Number</label>-->
+			<input type="email" name="email" placeholder="e-mail ID" title="valid e-Mail ID" />
+			</div>
+			</fieldset>			
+			
+			<div class="form-group">
+			<!--<label>Reference</label>-->
+			<input type="text" name="ref" placeholder="Reference" title="referral doctor" />
+			</div>
+			
+			<fieldset>
+			<legend>Informant's Details</legend>
+			<div class="form-group">
+			<!--<label>Informant</label>-->
+			<input type="text" name="informant" placeholder="Informant" title="informant" />
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="iphone" placeholder="Informant Phone Number" title="10 digit mobile number" />
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<legend>Medical  Details</legend>
+			<div class="form-group">
+			<label>Medico Legal Case:</label>
+			<input type="radio" name="MLC" value="yes">Yes
+			<input type="radio" name="MLC" value="no">No
+			</div>
+			
+			<div class="form-group">
+			<!--<label>Informant Phone Number</label>-->
+			<input type="number" name="policyno" placeholder="Policy Number" title="Patient's policy number" />
+			</div>
+			</fieldset>
+			
+			<div class="col-submit">
+    			<button class="submitbtn btn-success">Submit Form</button>
+  			
+    			<button type="reset" class="submitbtn btn-danger" >Reset</button>
+  			</div>
+  			  			
+		</form>	
+		</div>	
+	</div>
+<script>
+	
+	function setVisibility() {
+		var el0 = document.getElementById('tp');
+		var el = el0.value;
+		
+		var el1 = document.getElementById(el);
+		
+		el1.style.display='block';
+		
+     for(i = 0; i < el.length; i++) {
+       trend = el0[i];
+       if (!trend.selected) {
+           var el2 = document.getElementById(trend.value);
+           el2.style.display='none';
+       }
+       
+     }
+	}
+</script>
+</body>
+</html>

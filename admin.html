@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AdminPanel</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+	<link rel="stylesheet" href="footer.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Hi-Tech Hospital</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> User</a></li>
+        <li><a href="login.html" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container" align="center" id="opt">
+		<div class="jumbotron" id="opt" align="center">
+			<div>
+				<ul class="nav">
+        			<li><button type="button" onClick="pageChange()" class="btn btn-primary btn-block">Register</button></li>
+        			<li><button type="button" class="btn btn-primary btn-block">UpdateProfile</button></li>
+        			<li><button type="button" class="btn btn-primary btn-block">ResetPassword</button></li>
+      		</ul>
+			</div>
+			<hr>
+			<ul style="text-align:left;font-size: 10px; margin-bottom: 10px;">
+			<li>Admin will be responsibel for any thing relating to the security of the system.</li>
+			<li>Do not over estimate the power of a common man.</li>
+			<li>Verify user details on registration.</li>
+			<li>Developers of this system will not be responsible for the maintainance of the system.</li>			
+			</ul>
+		</div>	
+</div>	
+
+<div class="foot">
+	<p id="bottom">Hi-Tech Hospital 2015</p>	
+</div>
+
+<script>
+	function pageChange() {
+		window.open("signup.html",'_parent');
+	}
+	function setVisibility(id,visibility) {
+		
+		var el = document.getElementById(id);
+		alert(el)
+		var el1 = document.getElementById('opt');
+			el1.style.display='none';		
+        el.style.display = visibility;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+div.form-group {
+	position: relative;
+	display: inline-block;
+	margin-left: 20px;
+}
+.container{
+	border-radius: 10px;
+	background-color: #eee;
+	position: relative;
+	margin-top: 20px;
+	width: 800px;
+}
+
+.type{
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.col-submit{
+	margin-bottom: 10px;
+	text-align: center;
+}

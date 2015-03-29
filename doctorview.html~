@@ -1,0 +1,41 @@
+<html>
+<head>
+	<title>DoctorView</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+	<link rel="stylesheet" href="footer.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+    <div class="container">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:#5c6bc0;">Hi-Tech Hospital</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</nav>	                
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Diagnosis</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Videos</a></li>        
+      </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
+

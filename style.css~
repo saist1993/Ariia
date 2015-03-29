@@ -64,8 +64,3 @@ div.jumbotron#login{
 .form-group {
 	#text-align: left;
 }
-
-#DoctorViewInnerbox{
-	width: 320px;
-	height: 240px;
-}

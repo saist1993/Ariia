@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>AdminPanel</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+	<link rel="stylesheet" href="footer.css" type="text/css">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link href="test/video.js/src/css/video-js.less" rel="stylesheet">
+	<script src="test/video.js/src/video.js">
+	
+	</script>	
+	
+
+</head>
+
+
+<body>
+    <div class="container">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:#5c6bc0;">Hi-Tech Hospital</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</nav>	                
+      <ul class="nav nav-tabs" role="tablist">
+        <li ><a href="#">Home</a></li>
+        <li><a href="#">Diagnosis</a></li>
+        <li><a href="#">Reports</a></li>
+        <li  class="active"  ><a href="#" >Videos</a></li>        
+      </ul>
+    </div>
+    <br>
+<div class="container" align="center" id="reset">
+		<div class="jumbotron" align="center">
+				<div class="row ">
+				<div class = "col-sm-1">
+				<video width="320" height="240" controls>
+ 					 <source src="small.ogv" type="video/ogg">
+  							Your browser does not support the video tag.
+				</video>
+				</div>
+		</div>
+		</div>
+		</div>
+	
+			
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

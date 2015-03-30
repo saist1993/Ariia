@@ -2,13 +2,18 @@
 <html>
 <head>
 	<title>AdminPanel</title>
+	
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	
+
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
 	<link rel="stylesheet" href="footer.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 	
 </head>
 
@@ -16,7 +21,7 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Hi-Tech Hospital</a>
+      <a class="navbar-brand" href="index.html">Hi-Tech Hospital</a>
     </div>
     <div>
       <ul class="nav navbar-nav navbar-right">
@@ -30,9 +35,9 @@
 		<div class="jumbotron" id="opt" align="center">
 			<div>
 				<ul class="nav">
-        			<li><button type="button" onClick="pageChange()" class="btn btn-primary btn-block">Register</button></li>
-        			<li><button type="button" class="btn btn-primary btn-block">UpdateProfile</button></li>
-        			<li><button type="button" class="btn btn-primary btn-block">ResetPassword</button></li>
+        			<li><button type="button" onClick="pageChange(this.id)" class="btn btn-primary btn-block" id="register">Register</button></li>
+        			<li><button type="button" onClick="pageChange(this.id)" class="btn btn-primary btn-block" id="updateprofile">UpdateProfile</button></li>
+        			<li><button type="button" onClick="pageChange(this.id)" class="btn btn-primary btn-block" id="resetpassword">ResetPassword</button></li>
       		</ul>
 			</div>
 			<hr>
@@ -48,19 +53,5 @@
 <div class="foot">
 	<p id="bottom">Hi-Tech Hospital 2015</p>	
 </div>
-
-<script>
-	function pageChange() {
-		window.open("signup.html",'_parent');
-	}
-	function setVisibility(id,visibility) {
-		
-		var el = document.getElementById(id);
-		alert(el)
-		var el1 = document.getElementById('opt');
-			el1.style.display='none';		
-        el.style.display = visibility;
-	}
-</script>
 </body>
 </html>

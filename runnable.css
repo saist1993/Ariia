@@ -4,16 +4,19 @@ div.form-group {
 	margin-left: 20px;
 }
 .container{
+	
 	border-radius: 10px;
 	background-color: #eee;
 	position: relative;
+	margin: 100px;
 	margin-top: 20px;
-	width: 800px;
+	
+	width: auto;
 }
 
 .type{
 	position: relative;
-	margin-top: 40px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 

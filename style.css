@@ -1,25 +1,7 @@
 body {
 	background: #c5cae9;
 }
-.row{
-	position: relative;
-	padding-left: 159px;
-	padding-right: 200px;
-	margin-bottom: 10px;
-}
-.row > div{
-	border-radius: 5px;
-	display: inline;
-	
-	background-color: #eee;
-	box-shadow: 10px 10px 5px #888888;
-	height: 200px;
-	position: relative;
-	margin-top: 10px;
-	width: 263px;
-	
-	margin-right: 10px;
-}
+
 div.jumbotron#login{
 	box-shadow: 10px 10px 5px #888888;
 	background-color: #eee;
@@ -63,4 +45,8 @@ div.jumbotron#login{
 }
 .form-group {
 	#text-align: left;
+}
+#DoctorViewInnerbox{
+width: 320px;
+height: 240px;
 }

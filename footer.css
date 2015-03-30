@@ -1,12 +1,12 @@
-.foot{
+.row .foot{
 	background-color: #eee;
 	color: #5c6bc0;
 	position:relative;
 	width: 100%;
-	
+	bottom: 10px;
 	text-align: center;
-	padding-top: 20px;
-	height: 50px;
+	
+	height: 10px;
 	
 }
 #opt.jumbotron{

@@ -6,12 +6,13 @@
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
 	<script type="text/javascript" src="script.js"></script>	
+	
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
 	<link rel="stylesheet" href="footer.css" type="text/css">
 	<link rel="stylesheet" href="style.css" type="text/css">
 	<link rel="stylesheet" href="runnable.css" type="text/css">
-	    
+	       
 </head>
 
 <body style="overflow:scroll;" onload="clear()">
@@ -28,20 +29,23 @@
     </div>
   </div>
 </nav>
+
 <div class="col-sm-3"></div>
-	<div class="container col-sm-6">	
-		<div class="type">	
+
+	<div class="container col-sm-6">
+		<div class="type" style="display:inline-block;">
+		<form id="Id">
 			<label>Choose type of the user:</label>
 			<select id="tp">
 			<option value="Doctor">Doctor</option>
 			<option value="MedicalOfficer">Medical Officer</option>
 			<option value="Nurse">Nurse</option>
 			<option value="Receptionist">Receptionist</option>
-			<option value="Patient">Patient</option>
 			</select>
-			<input type="button" value="Select" onClick="setVisibility()"/>		
+			<div style="position:relative;display:inline-block;" ><input type="text" name="userId" oninput="myFunc()" id="userId" required/></div>
+			<div style="position:relative; display:inline-block;"><input type="button" id="choice" value="Select" onClick="setVisibile()" /></div>		
+		</form>		
 		</div>
-		
 		<div class="f" id="Doctor" style="display:none;">		
 		<form id="signUp">
 			<fieldset>
@@ -514,28 +518,8 @@
   			</div>
   			  			
 		</form>	
-		</div>	
+		</div>
 	</div>
 <div class="col-sm-3"></div>
-<script>
-	
-	function setVisibility() {
-		var el0 = document.getElementById('tp');
-		var el = el0.value;
-		
-		var el1 = document.getElementById(el);
-		
-		el1.style.display='block';
-		
-     for(i = 0; i < el.length; i++) {
-       trend = el0[i];
-       if (!trend.selected) {
-           var el2 = document.getElementById(trend.value);
-           el2.style.display='none';
-       }
-       
-     }
-	}
-</script>
 </body>
 </html>
